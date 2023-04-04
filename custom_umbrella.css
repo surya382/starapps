@@ -61,16 +61,17 @@
     background-color:rgb(60, 173, 218) ;
     border: none;
     color: white;
-    padding: 5px;
+    font-weight: bold;
     cursor: pointer;
     
 }
 
 #file_upload{
-    
+    height: 25px;
     padding-left: 50px;
-    font-weight: bold;
+    
     cursor: pointer;
+    display: none;
 }
 
 .loader_div{

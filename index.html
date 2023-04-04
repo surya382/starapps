@@ -17,7 +17,7 @@
         </div>
 
         <div id = "icon_div" class="icon">
-            <img id="icon_img"  src="https://cdn-icons-png.flaticon.com/512/6840/6840478.png" alt="">
+            <img id="icon_img"  src="" alt="">
         </div>
 
          <div id="loader_div" class="loader_div">
@@ -45,10 +45,15 @@
 
            <p style="font-size: small; margin-top: 20px;">.png and .jpg files only.Max file size in 5MB.</p>
 
-           <label for="file_upload"><button id="button" >
-            <img src="./upload_icon.svg"   alt="upld_button">
-            <input  id = "file_upload"  onchange="uploadfile(event)"  type="file"  />
-           </button></label>
+           
+            <button id="button" >
+            <label for="file_upload" style="display: flex; justify-content: space-between; gap: 20px;">
+            <img src="./upload_icon.svg"    alt="upld_button">
+            <input  id = "file_upload"  onchange="uploadfile(event)" accept="image/*"  type="file" />
+             <p style="font-size: medium;">Upload Logo</p> 
+            </label>
+           </button>
+        
 
            </div>
 

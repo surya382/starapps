@@ -1,5 +1,20 @@
 
 function change_color(color){
+
+    let img=document.getElementById("img_box")
+   
+    let icon_div=document.getElementById("icon_div")
+    let loader_div=document.getElementById("loader_div")
+
+    img.style.display="none"
+    icon_div.style.display="none"
+    loader_div.style.display="block"
+    setTimeout(()=>{
+        loader_div.style.display="none"
+        img.style.display="block"
+        icon_div.style.display="block"
+    },100) 
+
     if (color == "blue"){
         document.getElementById("img").src="./Blue umbrella.png";
         document.getElementById("button").style.backgroundColor="rgb(60, 173, 218)"
